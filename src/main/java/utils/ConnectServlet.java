@@ -39,6 +39,14 @@ public class ConnectServlet extends HttpServlet {
         }
     }
 
+    public static Connection getConnection() throws SQLException, ClassNotFoundException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        String jdbcUrl = "jdbc:mysql://localhost:3306/proj";
+        String username = "root";
+        String password = "123456";
+        return DriverManager.getConnection(jdbcUrl, username, password);
+    }
+
     /**
      * @see HttpServlet#HttpServlet()
      */
