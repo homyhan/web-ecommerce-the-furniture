@@ -58,7 +58,7 @@ a {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	.navbar-brand {
-		font-size: 32px;
+		font-size: 20px;
 		font-weight: 600;
 		> span {
 			opacity: .4;
@@ -888,4 +888,29 @@ textarea {
 		border-radius: 50%;
 		background:rgba($primary, .2);
 	}
+
 }
+form.d-flex {
+	margin-left: auto; /* This pushes the form to the right */
+}
+
+/* Style the search input */
+input.form-control {
+	width: 30px; /* Adjust the width as needed */
+	margin-right: 5px; /* Add some space between input and button */
+}
+
+/* Style the search button */
+button.btn {
+	background-color: #3b5d50; /* Set the background color */
+	color: #fff; /* Set the text color */
+	border: none; /* Remove border */
+
+}
+//.button.btn.btn-outline-success {
+//	padding-left: 15px;
+//	padding-top: 0px;
+//	width: 85px;
+//	margin-top: auto;
+//	height: 30px;
+//}
